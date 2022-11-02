@@ -11,3 +11,4 @@ router
     .get(obtenerColor)
     .put([check("nombreColor").notEmpty().withMessage("El nombre del color es un dato obligatorio")], editarColor)
     .delete(borrarColor);
+export default router;
